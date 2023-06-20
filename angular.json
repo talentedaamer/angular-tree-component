@@ -108,16 +108,6 @@
             ],
             "scripts": []
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/example-app/tsconfig.app.json",
-              "projects/example-app/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
         }
       }
     },
@@ -140,16 +130,6 @@
             "main": "projects/angular-tree-component/src/test.ts",
             "tsConfig": "projects/angular-tree-component/tsconfig.spec.json",
             "karmaConfig": "projects/angular-tree-component/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/angular-tree-component/tsconfig.lib.json",
-              "projects/angular-tree-component/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -248,17 +228,6 @@
             ],
             "styles": ["projects/docs-app/src/styles.scss"],
             "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/docs-app/tsconfig.app.json",
-              "projects/docs-app/tsconfig.spec.json",
-              "projects/docs-app/e2e/tsconfig.json"
-            ],
-            "exclude": ["**/node_modules/**"]
           }
         }
       }

@@ -1,0 +1,555 @@
+PS D:\src\angular-tree-component> ng update @angular/core@13 @angular/cli@13 --allow-dirty
+The installed Angular CLI version is outdated.
+Installing a temporary Angular CLI versioned 13.3.11 to perform the update.
+✔ Package successfully installed.
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 48 dependencies.
+Fetching dependency metadata from registry...
+    Updating package.json with dependency @angular-devkit/build-angular @ "13.3.11" (was "12.2.18")...
+    Updating package.json with dependency @angular-devkit/core @ "13.3.11" (was "12.2.18")...
+    Updating package.json with dependency @angular/cli @ "13.3.11" (was "12.2.18")...
+    Updating package.json with dependency @angular/common @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency @angular/compiler @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency @angular/compiler-cli @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency @angular/core @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency @angular/elements @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency @angular/platform-browser @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency @angular/platform-browser-dynamic @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency @angular/platform-server @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency @angular/router @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency ng-packagr @ "13.3.1" (was "12.2.7")...
+    Updating package.json with dependency typescript @ "4.6.4" (was "4.3.5")...
+    Updating package.json with dependency @angular/animations @ "13.4.0" (was "12.2.17")...
+    Updating package.json with dependency @angular/forms @ "13.4.0" (was "12.2.17")...
+  UPDATE package.json (5269 bytes)
+✔ Packages successfully installed.
+** Executing migrations of package '@angular/cli' **
+
+> Remove polyfills required only for Internet Explorer which is no longer supported.
+  UPDATE projects/example-app/src/polyfills.ts (2717 bytes)
+  UPDATE projects/docs-app/src/polyfills.ts (2390 bytes)
+  Migration completed.
+
+> Remove no longer valid Angular schematic options from `angular.json`.
+  Migration completed.
+
+> Remove deprecated options from 'angular.json' that are no longer present in v13.
+  UPDATE angular.json (8149 bytes)
+  Migration completed.
+
+> Updating '.gitignore' to include '.angular/cache'.
+  UPDATE .gitignore (965 bytes)
+  Migration completed.
+
+> Update library projects to be published in partial mode and removed deprecated options from ng-packagr configuration.
+  UPDATE projects/angular-tree-component/ng-package.json (303 bytes)
+  Migration completed.
+
+** Executing migrations of package '@angular/core' **
+
+> Migrates `[routerLink]=""` in templates to `[routerLink]="[]"` because these links are likely intended to route to the current page with updated fragment/query params.
+  Migration completed.
+
+> In Angular version 13, the `teardown` flag in `TestBed` will be enabled by default.
+  This migration automatically opts out existing apps from the new teardown behavior.
+  UPDATE projects/example-app/src/app/actions/actions.component.spec.ts (710 bytes)
+  UPDATE projects/example-app/src/app/api/api.component.spec.ts (682 bytes)
+  UPDATE projects/example-app/src/app/contextmenu/contextmenu.component.spec.ts (738 bytes)
+  UPDATE projects/example-app/src/app/virtualscroll/virtualscroll.component.spec.ts (752 bytes)
+  UPDATE projects/angular-tree-component/src/test.ts (720 bytes)
+  UPDATE projects/docs-app/src/test.ts (837 bytes)
+  Migration completed.
+
+> As of Angular version 13, `entryComponents` are no longer necessary.
+  UPDATE projects/docs-app/src/app/custom-elements/code/code.module.ts (541 bytes)
+  UPDATE projects/docs-app/src/app/custom-elements/code/code-example.module.ts (553 bytes)
+  UPDATE projects/docs-app/src/app/custom-elements/code/code-tabs.module.ts (679 bytes)
+  Migration completed.
+
+PS D:\src\angular-tree-component> ng update @angular/material@13 --allow-dirty            
+Repository is not clean. Update changes will be mixed with pre-existing changes.
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 48 dependencies.
+Fetching dependency metadata from registry...
+    Updating package.json with dependency @angular/cdk @ "13.3.9" (was "12.2.13")...
+    Updating package.json with dependency @angular/material @ "13.3.9" (was "12.2.13")...
+  UPDATE package.json (5267 bytes)
+✔ Packages successfully installed.
+** Executing migrations of package '@angular/cdk' **
+
+> Updates the Angular CDK to v13.
+    
+      ✓  Updated Angular CDK to version 13
+
+  UPDATE projects/docs-app/src/styles.scss (589 bytes)
+  Migration completed.
+
+** Executing migrations of package '@angular/material' **
+
+> Updates Angular Material to v13.
+    
+      ✓  Updated Angular Material to version 13
+
+  Migration completed.
+
+PS D:\src\angular-tree-component> npm run lint:lib
+
+> @circlon/angular-tree-component@11.0.4 lint:lib D:\src\angular-tree-component
+> ng lint angular-tree-component
+
+
+Cannot find "lint" target for the specified project.
+
+You should add a package that implements linting capabilities.
+
+For example:
+  ng add @angular-eslint/schematics
+
+Would you like to add ESLint now? Yes
+ℹ Using package manager: npm
+✔ Found compatible package version: @angular-eslint/schematics@13.5.0.
+✔ Package information loaded.
+
+
+The package @angular-eslint/schematics@13.5.0 will be installed and executed.
+Would you like to proceed? Yes
+✔ Package successfully installed.
+    
+    All @angular-eslint dependencies have been successfully installed 🎉
+
+    Please see https://github.com/angular-eslint/angular-eslint for how to add ESLint configuration to your project.
+
+UPDATE package.json (5622 bytes)
+✔ Packages installed successfully.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @circlon/angular-tree-component@11.0.4 lint:lib: `ng lint angular-tree-component`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @circlon/angular-tree-component@11.0.4 lint:lib script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jhill\AppData\Roaming\npm-cache\_logs\2023-06-20T18_04_02_503Z-debug.log
+PS D:\src\angular-tree-component> notepad C:\Users\jhill\AppData\Roaming\npm-cache\_logs\2023-06-20T18_04_02_503Z-debug.log
+PS D:\src\angular-tree-component> npm run lint:lib
+
+> @circlon/angular-tree-component@11.0.4 lint:lib D:\src\angular-tree-component
+> ng lint angular-tree-component
+
+
+Cannot find "lint" target for the specified project.
+
+You should add a package that implements linting capabilities.
+
+For example:
+  ng add @angular-eslint/schematics
+
+Would you like to add ESLint now? Yes
+
+Skipping installation: Package already installed
+    
+    All @angular-eslint dependencies have been successfully installed 🎉
+
+    Please see https://github.com/angular-eslint/angular-eslint for how to add ESLint configuration to your project.
+
+UPDATE package.json (5622 bytes)
+✔ Packages installed successfully.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @circlon/angular-tree-component@11.0.4 lint:lib: `ng lint angular-tree-component`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @circlon/angular-tree-component@11.0.4 lint:lib script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jhill\AppData\Roaming\npm-cache\_logs\2023-06-20T18_05_07_402Z-debug.log
+PS D:\src\angular-tree-component> ng lint angular-tree-component
+
+Cannot find "lint" target for the specified project.
+
+You should add a package that implements linting capabilities.
+
+For example:
+  ng add @angular-eslint/schematics
+
+Would you like to add ESLint now? Yes
+
+Skipping installation: Package already installed
+    
+    All @angular-eslint dependencies have been successfully installed 🎉
+
+    Please see https://github.com/angular-eslint/angular-eslint for how to add ESLint configuration to your project.
+
+UPDATE package.json (5622 bytes)
+✔ Packages installed successfully.
+PS D:\src\angular-tree-component> ng lint angular-tree-component
+
+Cannot find "lint" target for the specified project.
+
+You should add a package that implements linting capabilities.
+
+For example:
+  ng add @angular-eslint/schematics
+
+Would you like to add ESLint now? (Y/n) 
+PS D:\src\angular-tree-component> npm install
+npm WARN @angular-devkit/build-ng-packagr@0.1002.0 requires a peer of ng-packagr@^10.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ajv-keywords@3.5.2 requires a peer of ajv@^6.9.1 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@6.0.0 requires a peer of @angular/compiler@>=2.3.1 <11.0.0 || >9.0.0-beta <11.0.0 || >9.1.0-beta <11.0.0 || >9.2.0-beta <11.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@6.0.0 requires a peer of @angular/core@>=2.3.1 <11.0.0 || >9.0.0-beta <11.0.0 || >9.1.0-beta <11.0.0 || >9.2.0-beta <11.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN tsickle@0.38.1 requires a peer of typescript@~3.8.2 but none is installed. You must install peer dependencies yourself.
+npm WARN update-browserslist-db@1.0.11 requires a peer of browserslist@>= 4.21.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @nrwl/nx-darwin-x64@15.9.3 (node_modules\@nrwl\nx-darwin-x64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @nrwl/nx-darwin-x64@15.9.3: wanted {"os":"darwin","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @nrwl/nx-darwin-arm64@15.9.3 (node_modules\@nrwl\nx-darwin-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @nrwl/nx-darwin-arm64@15.9.3: wanted {"os":"darwin","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @nrwl/nx-linux-arm-gnueabihf@15.9.3 (node_modules\@nrwl\nx-linux-arm-gnueabihf):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @nrwl/nx-linux-arm-gnueabihf@15.9.3: wanted {"os":"linux","arch":"arm"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @nrwl/nx-linux-arm64-musl@15.9.3 (node_modules\@nrwl\nx-linux-arm64-musl):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @nrwl/nx-linux-arm64-musl@15.9.3: wanted {"os":"linux","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @nrwl/nx-win32-arm64-msvc@15.9.3 (node_modules\@nrwl\nx-win32-arm64-msvc):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @nrwl/nx-win32-arm64-msvc@15.9.3: wanted {"os":"win32","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @nrwl/nx-linux-arm64-gnu@15.9.3 (node_modules\@nrwl\nx-linux-arm64-gnu):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @nrwl/nx-linux-arm64-gnu@15.9.3: wanted {"os":"linux","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @nrwl/nx-linux-x64-musl@15.9.3 (node_modules\@nrwl\nx-linux-x64-musl):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @nrwl/nx-linux-x64-musl@15.9.3: wanted {"os":"linux","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @nrwl/nx-linux-x64-gnu@15.9.3 (node_modules\@nrwl\nx-linux-x64-gnu):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @nrwl/nx-linux-x64-gnu@15.9.3: wanted {"os":"linux","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @esbuild/linux-loong64@0.14.54 (node_modules\@esbuild\linux-loong64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @esbuild/linux-loong64@0.14.54: wanted {"os":"linux","arch":"loong64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-android-64@0.14.54 (node_modules\esbuild-android-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-android-64@0.14.54: wanted {"os":"android","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-freebsd-arm64@0.14.22 (node_modules\esbuild-freebsd-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-freebsd-arm64@0.14.22: wanted {"os":"freebsd","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-darwin-64@0.14.22 (node_modules\esbuild-darwin-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-darwin-64@0.14.22: wanted {"os":"darwin","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-android-arm64@0.14.22 (node_modules\esbuild-android-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-android-arm64@0.14.22: wanted {"os":"android","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-darwin-arm64@0.14.22 (node_modules\esbuild-darwin-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-darwin-arm64@0.14.22: wanted {"os":"darwin","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-freebsd-64@0.14.22 (node_modules\esbuild-freebsd-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-freebsd-64@0.14.22: wanted {"os":"freebsd","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-32@0.14.22 (node_modules\esbuild-linux-32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-32@0.14.22: wanted {"os":"linux","arch":"ia32"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-arm@0.14.22 (node_modules\esbuild-linux-arm):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-arm@0.14.22: wanted {"os":"linux","arch":"arm"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-64@0.14.22 (node_modules\esbuild-linux-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-64@0.14.22: wanted {"os":"linux","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-ppc64le@0.14.22 (node_modules\esbuild-linux-ppc64le):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-ppc64le@0.14.22: wanted {"os":"linux","arch":"ppc64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-arm64@0.14.22 (node_modules\esbuild-linux-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-arm64@0.14.22: wanted {"os":"linux","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-mips64le@0.14.22 (node_modules\esbuild-linux-mips64le):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-mips64le@0.14.22: wanted {"os":"linux","arch":"mips64el"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-s390x@0.14.22 (node_modules\esbuild-linux-s390x):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-s390x@0.14.22: wanted {"os":"linux","arch":"s390x"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-riscv64@0.14.22 (node_modules\esbuild-linux-riscv64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-riscv64@0.14.22: wanted {"os":"linux","arch":"riscv64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-sunos-64@0.14.22 (node_modules\esbuild-sunos-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-sunos-64@0.14.22: wanted {"os":"sunos","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-netbsd-64@0.14.22 (node_modules\esbuild-netbsd-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-netbsd-64@0.14.22: wanted {"os":"netbsd","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-openbsd-64@0.14.22 (node_modules\esbuild-openbsd-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-openbsd-64@0.14.22: wanted {"os":"openbsd","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-windows-32@0.14.22 (node_modules\esbuild-windows-32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-windows-32@0.14.22: wanted {"os":"win32","arch":"ia32"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-windows-arm64@0.14.22 (node_modules\esbuild-windows-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-windows-arm64@0.14.22: wanted {"os":"win32","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-android-arm64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-android-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-android-arm64@0.14.54: wanted {"os":"android","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-freebsd-64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-freebsd-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-freebsd-64@0.14.54: wanted {"os":"freebsd","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-darwin-arm64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-darwin-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-darwin-arm64@0.14.54: wanted {"os":"darwin","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-darwin-64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-darwin-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-darwin-64@0.14.54: wanted {"os":"darwin","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-freebsd-arm64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-freebsd-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-freebsd-arm64@0.14.54: wanted {"os":"freebsd","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-32@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-linux-32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-32@0.14.54: wanted {"os":"linux","arch":"ia32"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-linux-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-64@0.14.54: wanted {"os":"linux","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-arm@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-linux-arm):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-arm@0.14.54: wanted {"os":"linux","arch":"arm"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-arm64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-linux-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-arm64@0.14.54: wanted {"os":"linux","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-riscv64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-linux-riscv64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-riscv64@0.14.54: wanted {"os":"linux","arch":"riscv64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-mips64le@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-linux-mips64le):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-mips64le@0.14.54: wanted {"os":"linux","arch":"mips64el"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-ppc64le@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-linux-ppc64le):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-ppc64le@0.14.54: wanted {"os":"linux","arch":"ppc64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-netbsd-64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-netbsd-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-netbsd-64@0.14.54: wanted {"os":"netbsd","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-s390x@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-linux-s390x):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-s390x@0.14.54: wanted {"os":"linux","arch":"s390x"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-openbsd-64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-openbsd-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-openbsd-64@0.14.54: wanted {"os":"openbsd","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-windows-32@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-windows-32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-windows-32@0.14.54: wanted {"os":"win32","arch":"ia32"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-sunos-64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-sunos-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-sunos-64@0.14.54: wanted {"os":"sunos","arch":"x64"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: nice-napi@1.0.2 (node_modules\nice-napi):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for nice-napi@1.0.2: wanted {"os":"!win32","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-windows-arm64@0.14.54 (node_modules\ng-packagr\node_modules\esbuild-windows-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-windows-arm64@0.14.54: wanted {"os":"win32","arch":"arm64"} (current: {"os":"win32","arch":"x64"})
+
+audited 2286 packages in 11.451s
+
+160 packages are looking for funding
+  run `npm fund` for details
+
+found 176 vulnerabilities (8 low, 44 moderate, 92 high, 32 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+PS D:\src\angular-tree-component> npm run lint:lib
+
+> @circlon/angular-tree-component@11.0.4 lint:lib D:\src\angular-tree-component
+> ng lint angular-tree-component
+
+
+Cannot find "lint" target for the specified project.
+
+You should add a package that implements linting capabilities.
+
+For example:
+  ng add @angular-eslint/schematics
+
+Would you like to add ESLint now? (Y/n) npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @circlon/angular-tree-component@11.0.4 lint:lib: `ng lint angular-tree-component`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @circlon/angular-tree-component@11.0.4 lint:lib script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jhill\AppData\Roaming\npm-cache\_logs\2023-06-20T18_07_29_769Z-debug.log
+PS D:\src\angular-tree-component> ng lint angular-tree-component
+
+Cannot find "lint" target for the specified project.
+
+You should add a package that implements linting capabilities.
+
+For example:
+  ng add @angular-eslint/schematics
+
+Would you like to add ESLint now? Yes
+Skipping installation: Package already installed
+    
+    All @angular-eslint dependencies have been successfully installed 🎉
+
+    Please see https://github.com/angular-eslint/angular-eslint for how to add ESLint configuration to your project.
+
+UPDATE package.json (5622 bytes)
+✔ Packages installed successfully.
+PS D:\src\angular-tree-component> npm run build:lib
+
+> @circlon/angular-tree-component@11.0.4 build:lib D:\src\angular-tree-component
+> npm run lint:lib && npm run clean:dist && ng build angular-tree-component
+
+
+> @circlon/angular-tree-component@11.0.4 lint:lib D:\src\angular-tree-component
+> ng lint angular-tree-component
+
+
+Cannot find "lint" target for the specified project.
+
+You should add a package that implements linting capabilities.
+
+For example:
+  ng add @angular-eslint/schematics
+
+Would you like to add ESLint now? (Y/n) npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @circlon/angular-tree-component@11.0.4 lint:lib: `ng lint angular-tree-component`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @circlon/angular-tree-component@11.0.4 lint:lib script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jhill\AppData\Roaming\npm-cache\_logs\2023-06-20T18_08_59_264Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @circlon/angular-tree-component@11.0.4 build:lib: `npm run lint:lib && npm run clean:dist && ng build angular-tree-component`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @circlon/angular-tree-component@11.0.4 build:lib script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jhill\AppData\Roaming\npm-cache\_logs\2023-06-20T18_08_59_289Z-debug.log
+PS D:\src\angular-tree-component> npm run build    
+
+> @circlon/angular-tree-component@11.0.4 build D:\src\angular-tree-component
+> npm run build:lib
+
+
+> @circlon/angular-tree-component@11.0.4 build:lib D:\src\angular-tree-component
+> npm run lint:lib && npm run clean:dist && ng build angular-tree-component
+
+
+> @circlon/angular-tree-component@11.0.4 lint:lib D:\src\angular-tree-component
+> ng lint angular-tree-component
+
+
+Cannot find "lint" target for the specified project.
+
+You should add a package that implements linting capabilities.
+
+For example:
+  ng add @angular-eslint/schematics
+
+Would you like to add ESLint now? (Y/n) npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @circlon/angular-tree-component@11.0.4 lint:lib: `ng lint angular-tree-component`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @circlon/angular-tree-component@11.0.4 lint:lib script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jhill\AppData\Roaming\npm-cache\_logs\2023-06-20T18_09_10_549Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @circlon/angular-tree-component@11.0.4 build:lib: `npm run lint:lib && npm run clean:dist && ng build angular-tree-component`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @circlon/angular-tree-component@11.0.4 build:lib script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jhill\AppData\Roaming\npm-cache\_logs\2023-06-20T18_09_10_576Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @circlon/angular-tree-component@11.0.4 build: `npm run build:lib`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @circlon/angular-tree-component@11.0.4 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\jhill\AppData\Roaming\npm-cache\_logs\2023-06-20T18_09_10_602Z-debug.log
+PS D:\src\angular-tree-component> npm run test:dev
+
+> @circlon/angular-tree-component@11.0.4 test:dev D:\src\angular-tree-component
+> testcafe chrome:headless e2e/*.testcafe.js
+
+ Running tests in:
+ - Chrome 114.0.5735.134 / Windows 10
+
+ Async
+ √ should show the tree
+ √ should have 3 nodes
+ √ should not show loading before expanding
+ - should show loading
+ √ should show children and then loading disappears
+ √ should show not show loading the second time we expand the node
+
+ Basic
+ √ should show the tree
+ √ should have 5 nodes
+ √ should have a node named root1
+ √ roots with children should have an expander icon
+ √ roots with children should not have an expander icon
+ √ roots with children should start collapsed
+ √ should expand & collapse children on click expander
+ √ should start inactive
+ √ should activate & deactivate nodes on click
+ √ should start without focus
+ √ should focus on a node on click
+ √ should navigate with keys
+ √ should toggle active on space
+ √ should toggle active on enter
+ √ should not show checkboxes
+
+ Checkboxes
+ √ should show the tree
+ √ should show checkboxes
+ √ should not be checked
+ √ should not be indeterminate
+ √ should check leaf and make ancestors indeterminate
+ √ should check all descendants when selecting root2
+ √ should make ancestor indeterminate when unchecking desendant
+ √ should disable tri-state if useTriState is false
+ √ should reflect selected parent state in async children
+ √ should not select child of async root if it is not selected
+ √ should not select child of async root if it is not using triState
+
+ Drag and Drop
+ √ should show the tree
+ √ should have expected children
+ √ should allow to drag leaf
+ - should allow to drag to drop slot
+
+ Drag and Drop Styling
+ √ should show the tree
+ √ should have expected children
+ √ should allow to drag leaf
+ - should allow to drag to drop slot
+
+ Empty
+ √ should show the tree
+ √ should have 0 nodes
+ √ should load nodes into the tree
+
+ Empty
+ √ should show the tree
+ √ should have 0 nodes
+ √ should load nodes into the tree
+
+ Fields
+ √ should show the tree
+ √ should have 2 nodes
+ √ should display the custom display field
+ √ should use the nodeClass option
+
+ Filter
+ √ should show the tree
+ √ should have 3 nodes
+ √ should filter root nodes
+ √ should ensure all filtered nodes are visible
+ √ should not ensure all filtered nodes are visible
+
+ Filter child nodes
+ √ should show parent of visible child
+ √ should only show child matching filter
+
+ Clear Filter
+ √ should clear filter
+
+ Filter by function
+ √ should show parent of visible child
+ √ should only show child matching filter
+
+ Templates #tree1
+ √ should show the tree
+ √ should have 2 nodes
+ √ should use the template and pass it a node var
+ √ should use the template and pass it an index var
+
+ Templates #tree2
+ √ should show the tree
+ √ should have 2 nodes
+ √ should use the template and pass it a node var
+ √ should use the template and pass it an index var
+
+ Templates #tree3
+ √ should show the tree
+ √ should have 2 nodes
+ √ should use the template and pass it a node var
+ √ should use the template and pass it an index var
+
+ Templates loading component
+ √ should show the loading template
+
+
+ 70 passed (1m 16s)
+ 3 skipped
+PS D:\src\angular-tree-component> 
