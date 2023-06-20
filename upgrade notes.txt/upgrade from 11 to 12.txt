@@ -1,0 +1,388 @@
+PS D:\src\angular-tree-component> npm install
+
+> husky@4.2.3 install D:\src\angular-tree-component\node_modules\husky
+> node husky install
+
+husky > Setting up git hooks
+husky > Done
+
+> core-js@3.8.3 postinstall D:\src\angular-tree-component\node_modules\@angular-devkit\build-angular\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> core-js@2.6.11 postinstall D:\src\angular-tree-component\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> @angular/cli@11.2.0 postinstall D:\src\angular-tree-component\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
+
+> husky@4.2.3 postinstall D:\src\angular-tree-component\node_modules\husky
+> opencollective-postinstall || exit 0
+
+Thank you for using husky!
+If you rely on this package, please consider supporting our open collective:
+> https://opencollective.com/husky/donate
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+added 2357 packages from 1514 contributors and audited 2366 packages in 156.279s
+
+90 packages are looking for funding
+  run `npm fund` for details
+
+found 499 vulnerabilities (13 low, 185 moderate, 249 high, 52 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+PS D:\src\angular-tree-component> ng update @angular/core@12 @angular/cli@12
+The installed local Angular CLI version is older than the latest stable version.
+Installing a temporary version to perform the update.
+Installing packages for tooling via npm.
+Installed packages for tooling via npm.
+Workspace extension with invalid name (defaultProject) found.
+Error: Repository is not clean. Please commit or stash any changes before updating.
+PS D:\src\angular-tree-component> ng update @angular/core@12 @angular/cli@12 --allow-dirty
+The installed local Angular CLI version is older than the latest stable version.
+Installing a temporary version to perform the update.
+Installing packages for tooling via npm.
+Installed packages for tooling via npm.
+Workspace extension with invalid name (defaultProject) found.
+Repository is not clean. Update changes will be mixed with pre-existing changes.
+Using package manager: npm
+Collecting installed dependencies...
+Found 48 dependencies.
+Fetching dependency metadata from registry...
+    Updating package.json with dependency @angular-devkit/build-angular @ "12.2.18" (was "0.1102.0")...
+    Updating package.json with dependency @angular-devkit/core @ "12.2.18" (was "11.2.0")...
+    Updating package.json with dependency @angular/cli @ "12.2.18" (was "11.2.0")...
+    Updating package.json with dependency @angular/common @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency @angular/compiler @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency @angular/compiler-cli @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency @angular/core @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency @angular/elements @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency @angular/platform-browser @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency @angular/platform-browser-dynamic @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency @angular/platform-server @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency @angular/router @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency ng-packagr @ "12.2.7" (was "11.2.1")...
+    Updating package.json with dependency karma @ "6.4.2" (was "6.1.1")...
+    Updating package.json with dependency tslib @ "2.5.3" (was "2.0.0")...
+    Updating package.json with dependency typescript @ "4.3.5" (was "4.1.5")...
+    Updating package.json with dependency zone.js @ "0.11.8" (was "0.10.3")...
+    Updating package.json with dependency @angular/animations @ "12.2.17" (was "11.2.0")...
+    Updating package.json with dependency @angular/forms @ "12.2.17" (was "11.2.0")...
+UPDATE package.json (5278 bytes)
+✔ Packages successfully installed.
+** Executing migrations of package '@angular/cli' **
+
+> Remove deprecated options from 'angular.json' that are no longer present in v12.
+UPDATE angular.json (9221 bytes)
+  Migration completed (1 file modified).
+
+> Update 'zone.js' to version 0.11.x.
+  Read more about this here: https://github.com/angular/angular/blob/master/packages/zone.js/CHANGELOG.md#breaking-changes-since-zonejs-v0111
+UPDATE package.json (5279 bytes)
+UPDATE projects/angular-tree-component/src/test.ts (671 bytes)
+UPDATE projects/docs-app/src/polyfills.ts (2885 bytes)
+UPDATE projects/docs-app/src/test.ts (788 bytes)
+UPDATE projects/docs-app/src/environments/environment.ts (681 bytes)
+UPDATE projects/example-app/src/polyfills.ts (3215 bytes)
+UPDATE projects/example-app/src/test.ts (652 bytes)
+UPDATE projects/example-app/src/environments/environment.ts (649 bytes)
+✔ Packages installed successfully.
+  Migration completed (8 files modified).
+
+> Remove 'emitDecoratorMetadata' TypeScript compiler option.
+  Decorator metadata is no longer needed by Angular.
+  Read more about this here: https://www.typescriptlang.org/docs/handbook/decorators.html#metadata
+UPDATE tsconfig.json (908 bytes)
+  Migration completed (1 file modified).
+
+> Lazy loading syntax migration.
+  Update lazy loading string syntax to use dynamic imports.
+  Migration completed (No changes made).
+
+> Remove deprecated ViewEngine-based i18n build and extract options.
+  Options present in the configuration will be converted to use non-deprecated options.
+  Migration completed (No changes made).
+
+> Updates Web Worker consumer usage to use the new syntax supported directly by Webpack 5.
+  Migration completed (No changes made).
+
+> Remove invalid 'skipTests' option in '@schematics/angular:module' Angular schematic options.
+  Migration completed (No changes made).
+
+> Replace the deprecated '--prod' in package.json scripts.
+UPDATE package.json (5279 bytes)
+  Migration completed (1 file modified).
+
+** Executing migrations of package '@angular/core' **
+
+> In Angular version 12, the type of ActivatedRouteSnapshot.fragment is nullable.
+  This migration automatically adds non-null assertions to it.
+  Migration completed (No changes made).
+
+> `XhrFactory` has been moved from `@angular/common/http` to `@angular/common`.
+  Migration completed (No changes made).
+
+> Automatically migrates shadow-piercing selector from `/deep/` to the recommended alternative `::ng-deep`.
+  Migration completed (No changes made).
+
+PS D:\src\angular-tree-component> ng update @angular/material@12
+Repository is not clean. Please commit or stash any changes before updating.
+PS D:\src\angular-tree-component> ng update @angular/material@12 --allow-dirty
+Repository is not clean. Update changes will be mixed with pre-existing changes.
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 48 dependencies.
+Fetching dependency metadata from registry...
+    Updating package.json with dependency @angular/cdk @ "12.2.13" (was "11.2.0")...
+    Updating package.json with dependency @angular/material @ "12.2.13" (was "11.2.0")...
+  UPDATE package.json (5280 bytes)
+(node:47304) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Packages successfully installed.
+** Executing migrations of package '@angular/cdk' **
+
+> Updates the Angular CDK to v12.
+    
+      ✓  Updated Angular CDK to version 12
+
+  Migration completed.
+
+** Executing migrations of package '@angular/material' **
+
+> Updates Angular Material to v12.
+    
+    ⚠  General notice: The HammerJS v9 migration for Angular Components is not able to migrate tests. Please manually clean up tests in your project if they rely on HammerJS.
+    Read more about migrating tests: https://git.io/ng-material-v9-hammer-migrate-tests
+
+      ✓  Updated Angular Material to version 12
+
+  Migration completed.
+
+PS D:\src\angular-tree-component> npm run lint:lib                            
+
+> @circlon/angular-tree-component@11.0.4 lint:lib D:\src\angular-tree-component
+> ng lint angular-tree-component
+
+TSLint's support is discontinued and we're deprecating its support in Angular CLI.
+To opt-in using the community driven ESLint builder, see: https://github.com/angular-eslint/angular-eslint#migrating-an-angular-cli-project-from-codelyzer-and-tslint.
+Linting "angular-tree-component"...
+All files pass linting.
+PS D:\src\angular-tree-component> npm run build:lib
+
+> @circlon/angular-tree-component@11.0.4 build:lib D:\src\angular-tree-component
+> npm run lint:lib && npm run clean:dist && ng build angular-tree-component
+
+
+> @circlon/angular-tree-component@11.0.4 lint:lib D:\src\angular-tree-component
+> ng lint angular-tree-component
+
+TSLint's support is discontinued and we're deprecating its support in Angular CLI.
+To opt-in using the community driven ESLint builder, see: https://github.com/angular-eslint/angular-eslint#migrating-an-angular-cli-project-from-codelyzer-and-tslint.
+Linting "angular-tree-component"...
+All files pass linting.
+
+> @circlon/angular-tree-component@11.0.4 clean:dist D:\src\angular-tree-component
+> rimraf dist
+
+Building Angular Package
+WARNING: Option "whitelistedNonPeerDependencies" is deprecated: Use "allowedNonPeerDependencies" instead.
+(node:10528) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+------------------------------------------------------------------------------
+Building entry point '@circlon/angular-tree-component'
+------------------------------------------------------------------------------
+✔ Compiling with Angular in legacy View Engine compilation mode.
+✔ Bundling to FESM2015
+✔ Bundling to UMD
+✔ Copying assets
+ℹ Removing devDependencies section in package.json.
+✔ Writing package metadata
+✔ Built @circlon/angular-tree-component
+
+------------------------------------------------------------------------------
+Built Angular Package
+ - from: D:\src\angular-tree-component\projects\angular-tree-component
+ - to:   D:\src\angular-tree-component\dist\angular-tree-component
+------------------------------------------------------------------------------
+
+Build at: 2023-06-20T17:19:06.684Z - Time: 4648ms
+
+PS D:\src\angular-tree-component> npm run build    
+
+> @circlon/angular-tree-component@11.0.4 build D:\src\angular-tree-component
+> npm run build:lib
+
+
+> @circlon/angular-tree-component@11.0.4 build:lib D:\src\angular-tree-component
+> npm run lint:lib && npm run clean:dist && ng build angular-tree-component
+
+
+> @circlon/angular-tree-component@11.0.4 lint:lib D:\src\angular-tree-component
+> ng lint angular-tree-component
+
+TSLint's support is discontinued and we're deprecating its support in Angular CLI.
+To opt-in using the community driven ESLint builder, see: https://github.com/angular-eslint/angular-eslint#migrating-an-angular-cli-project-from-codelyzer-and-tslint.
+Linting "angular-tree-component"...
+All files pass linting.
+
+> @circlon/angular-tree-component@11.0.4 clean:dist D:\src\angular-tree-component
+> rimraf dist
+
+Building Angular Package
+WARNING: Option "whitelistedNonPeerDependencies" is deprecated: Use "allowedNonPeerDependencies" instead.
+(node:28248) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+------------------------------------------------------------------------------
+Building entry point '@circlon/angular-tree-component'
+------------------------------------------------------------------------------
+✔ Compiling with Angular in legacy View Engine compilation mode.
+✔ Bundling to FESM2015
+✔ Bundling to UMD
+✔ Copying assets
+ℹ Removing devDependencies section in package.json.
+✔ Writing package metadata
+✔ Built @circlon/angular-tree-component
+
+------------------------------------------------------------------------------
+Built Angular Package
+ - from: D:\src\angular-tree-component\projects\angular-tree-component
+ - to:   D:\src\angular-tree-component\dist\angular-tree-component
+------------------------------------------------------------------------------
+
+Build at: 2023-06-20T17:19:38.718Z - Time: 6442ms
+
+PS D:\src\angular-tree-component> npm run test:dev
+
+> @circlon/angular-tree-component@11.0.4 test:dev D:\src\angular-tree-component
+> testcafe chrome:headless e2e/*.testcafe.js
+
+ Running tests in:
+ - Chrome 114.0.5735.134 / Windows 10
+
+ Async
+ √ should show the tree
+ √ should have 3 nodes
+ √ should not show loading before expanding
+ - should show loading
+ √ should show children and then loading disappears
+ √ should show not show loading the second time we expand the node
+
+ Basic
+ √ should show the tree
+ √ should have 5 nodes
+ √ should have a node named root1
+ √ roots with children should have an expander icon
+ √ roots with children should not have an expander icon
+ √ roots with children should start collapsed
+ √ should expand & collapse children on click expander
+ √ should start inactive
+ √ should activate & deactivate nodes on click
+ √ should start without focus
+ √ should focus on a node on click
+ √ should navigate with keys
+ √ should toggle active on space
+ √ should toggle active on enter
+ √ should not show checkboxes
+
+ Checkboxes
+ √ should show the tree
+ √ should show checkboxes
+ √ should not be checked
+ √ should not be indeterminate
+ √ should check leaf and make ancestors indeterminate
+ √ should check all descendants when selecting root2
+ √ should make ancestor indeterminate when unchecking desendant
+ √ should disable tri-state if useTriState is false
+ √ should reflect selected parent state in async children
+ √ should not select child of async root if it is not selected
+ √ should not select child of async root if it is not using triState
+
+ Drag and Drop
+ √ should show the tree
+ √ should have expected children
+ √ should allow to drag leaf
+ - should allow to drag to drop slot
+
+ Drag and Drop Styling
+ √ should show the tree
+ √ should have expected children
+ √ should allow to drag leaf
+ - should allow to drag to drop slot
+
+ Empty
+ √ should show the tree
+ √ should have 0 nodes
+ √ should load nodes into the tree
+
+ Empty
+ √ should show the tree
+ √ should have 0 nodes
+ √ should load nodes into the tree
+
+ Fields
+ √ should show the tree
+ √ should have 2 nodes
+ √ should display the custom display field
+ √ should use the nodeClass option
+
+ Filter
+ √ should show the tree
+ √ should have 3 nodes
+ √ should filter root nodes
+ √ should ensure all filtered nodes are visible
+ √ should not ensure all filtered nodes are visible
+
+ Filter child nodes
+ √ should show parent of visible child
+ √ should only show child matching filter
+
+ Clear Filter
+ √ should clear filter
+
+ Filter by function
+ √ should show parent of visible child
+ √ should only show child matching filter
+
+ Templates #tree1
+ √ should show the tree
+ √ should have 2 nodes
+ √ should use the template and pass it a node var
+ √ should use the template and pass it an index var
+
+ Templates #tree2
+ √ should show the tree
+ √ should have 2 nodes
+ √ should use the template and pass it a node var
+ √ should use the template and pass it an index var
+
+ Templates #tree3
+ √ should show the tree
+ √ should have 2 nodes
+ √ should use the template and pass it a node var
+ √ should use the template and pass it an index var
+
+ Templates loading component
+ √ should show the loading template
+
+
+ 70 passed (1m 15s)
+ 3 skipped
+PS D:\src\angular-tree-component> 
