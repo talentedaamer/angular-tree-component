@@ -99,5 +99,6 @@ export {
   TreeNodeCollectionComponent,
   TreeViewportComponent,
   TreeNodeCheckboxComponent,
-  ITreeState
+  ITreeState,
+  TreeMobxAutorunDirective
 };
