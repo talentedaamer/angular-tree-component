@@ -4,16 +4,16 @@
 
 # angular tree component
 
-## Getting started
+## Getting started - WARNING: This is an unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests started failing but proceeding anyways as the example-app works as expected and some of the unit test dependencies didn't appear to handle ivy changes.
 
 Install `angular-tree-component`:
 
-```npm install @circlon/angular-tree-component```
+```npm install @odymaui/angular-tree-component```
 
 Import `TreeModule`:
 
 ```
-import { TreeModule } from '@circlon/angular-tree-component';
+import { TreeModule } from '@odymaui/angular-tree-component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +26,7 @@ export class AppModule {}
 Add css to `styles.scss` or include in `angular.json`:
 
 ```
-@import '~@circlon/angular-tree-component/css/angular-tree-component.css';
+@import '~@odymaui/angular-tree-component/css/angular-tree-component.css';
 ```
 
 ## Docs, Demos & More

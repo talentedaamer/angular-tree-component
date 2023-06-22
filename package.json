@@ -1,9 +1,9 @@
 {
-  "name": "@circlon/angular-tree-component",
+  "name": "@odymaui/angular-tree-component",
   "version": "11.0.4",
-  "description": "A simple yet powerful tree component for Angular2",
+  "description": "A simple yet powerful tree component for Angular2.  WARNING: This is an unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests started failing but proceeding anyways as the example-app works as expected and some of the unit test dependencies didn't appear to handle ivy changes.",
   "author": "Circlon Group <os-group@circlon.de>",
-  "homepage": "https://github.com/CirclonGroup/angular-tree-component",
+  "homepage": "https://github.com/odymaui/angular-tree-component",
   "license": "MIT",
   "keywords": [
     "ng",
@@ -56,7 +56,7 @@
   "files": [
     "dist/"
   ],
-  "readme": "https://github.com/CirclonGroup/angular-tree-component/blob/master/README.md",
+  "readme": "https://github.com/odymaui/angular-tree-component/blob/master/README.md",
   "contributors": [
     "Adam Klein <adam@500tech.com>"
   ],
@@ -122,9 +122,9 @@
   "peerDependencies": {
     "mobx": "~4.14.1"
   },
-  "repository": "https://github.com/CirclonGroup/angular-tree-component.git",
+  "repository": "https://github.com/odymaui/angular-tree-component.git",
   "bugs": {
-    "url": "https://github.com/CirclonGroup/angular-tree-component/issues"
+    "url": "https://github.com/odymaui/angular-tree-component/issues"
   },
   "engines": {
     "node": ">=10.21.0"
