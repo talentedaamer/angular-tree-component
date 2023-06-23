@@ -1,0 +1,6 @@
+{
+    "ignorePatterns": ["node_modules/", "dist/",".eslintrc", ".eslintrc.js","temp.js", "**/vendor/*.js"],
+    "rules": {
+
+    }
+}

@@ -1,7 +1,7 @@
 {
   "name": "@odymaui/angular-tree-component",
-  "version": "11.0.4",
-  "description": "A simple yet powerful tree component for Angular2.  WARNING: This is an unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests started failing but proceeding anyways as the example-app works as expected and some of the unit test dependencies didn't appear to handle ivy changes.",
+  "version": "16.0.0",
+  "description": "A simple yet powerful tree component for Angular2.  WARNING: This is a broken, unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests started failing but proceeding anyways as the example-app works as expected and some of the unit test dependencies didn't appear to handle ivy changes. Working on identifying the issue(s) now.",
   "author": "Circlon Group <os-group@circlon.de>",
   "homepage": "https://github.com/odymaui/angular-tree-component",
   "license": "MIT",
@@ -65,18 +65,17 @@
     "@angular/cdk": "^16.1.1",
     "@angular/forms": "^16.1.2",
     "@angular/material": "^16.1.1",
-    "eslint-plugin-angular": "^4.1.0",
-    "mobx": "~4.14.1"
+    "mobx": "~6.9.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.1",
     "@angular-devkit/build-ng-packagr": "^0.1002.0",
     "@angular-devkit/core": "^16.1.1",
-    "@angular-eslint/builder": "13.5.0",
-    "@angular-eslint/eslint-plugin": "13.5.0",
-    "@angular-eslint/eslint-plugin-template": "13.5.0",
-    "@angular-eslint/schematics": "13.5.0",
-    "@angular-eslint/template-parser": "13.5.0",
+    "@angular-eslint/builder": "16.0.3",
+    "@angular-eslint/eslint-plugin": "16.0.3",
+    "@angular-eslint/eslint-plugin-template": "16.0.3",
+    "@angular-eslint/schematics": "16.0.3",
+    "@angular-eslint/template-parser": "16.0.3",
     "@angular/cli": "^16.1.1",
     "@angular/common": "^16.1.2",
     "@angular/compiler": "^16.1.2",
@@ -87,14 +86,15 @@
     "@angular/platform-browser-dynamic": "^16.1.2",
     "@angular/platform-server": "^16.1.2",
     "@angular/router": "^16.1.2",
+    "@schematics/angular": "^16.1.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.7",
     "@types/rx": "2.5.34",
     "@types/webpack": "^1.12.29",
-    "@typescript-eslint/eslint-plugin": "5.27.1",
-    "@typescript-eslint/parser": "5.27.1",
-    "eslint": "^8.17.0",
+    "@typescript-eslint/eslint-plugin": "5.59.7",
+    "@typescript-eslint/parser": "5.59.7",
+    "eslint": "^8.40.0",
     "html-dnd": "1.2.0",
     "http-server": "0.9.0",
     "husky": "^4.2.3",
@@ -105,12 +105,11 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "lint-staged": "^10.0.7",
     "ng-packagr": "^16.1.0",
     "nightwatch": "0.9.12",
     "prettier": "^1.19.1",
     "rimraf": "^2.5.1",
-    "rxjs": "^6.5.3",
+    "rxjs": "^7.8.1",
     "testcafe": "^1.8.8",
     "tsickle": "^0.38.1",
     "tslib": "^2.5.3",
@@ -139,13 +138,5 @@
     "bracketSpacing": true,
     "jsxBracketSameLine": true,
     "requirePragma": false
-  },
-  "lint-staged": {
-    "*.{js,ts,json}": [
-      "./node_modules/.bin/prettier --write"
-    ],
-    "*.ts": [
-      "tslint"
-    ]
   }
 }
