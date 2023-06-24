@@ -1,3 +1,5 @@
+//This has been moved to the tree.component.ts file to avoid NG3003 error related to import cycles
+/*
 import {
   Component,
   Input,
@@ -96,3 +98,4 @@ export class TreeNodeCollectionComponent implements OnInit, OnDestroy {
     return node.id;
   }
 }
+*/

@@ -1,3 +1,5 @@
+//moved to tree.component.ts to avoid NG3003 cycle error
+/*
 import {
   Component,
   Input,
@@ -60,3 +62,4 @@ export class TreeNodeComponent {
   @Input() index: number;
   @Input() templates: any;
 }
+*/

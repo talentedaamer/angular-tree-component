@@ -1,3 +1,5 @@
+//moved to tree.component.ts to avoid NG3003 cycle error
+/*
 import { Component , Input , ViewEncapsulation } from '@angular/core';
 import { TreeNode } from '../models/tree-node.model';
 
@@ -44,3 +46,4 @@ export class TreeNodeWrapperComponent {
   @Input() templates: any;
 
 }
+*/
