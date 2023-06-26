@@ -1,4 +1,12 @@
-import { observable, computed, reaction, autorun, action, IReactionDisposer } from 'mobx';
+import {
+  observable,
+  computed,
+  reaction,
+  autorun,
+  action,
+  IReactionDisposer,
+  makeObservable,
+} from 'mobx';
 import { TreeModel } from './tree.model';
 import { TreeOptions } from './tree-options.model';
 import { ITreeNode } from '../defs/api';
@@ -48,6 +56,7 @@ export class TreeNode implements ITreeNode {
   get originalNode() { return this._originalNode; };
 
   constructor(public data: any, public parent: TreeNode, public treeModel: TreeModel, index: number) {
+    makeObservable(this);
     if (this.id === undefined || this.id === null) {
       this.id = uuid();
     } // Make sure there's a unique id without overriding existing ids to work with immutable data structures

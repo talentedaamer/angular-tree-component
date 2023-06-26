@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { observable, computed, action, autorun, reaction } from 'mobx';
+import { observable, computed, action, autorun, reaction, makeObservable } from 'mobx';
 import { TreeModel } from './tree.model';
 import { TREE_EVENTS } from '../constants/events';
 
@@ -24,6 +24,7 @@ export class TreeVirtualScroll {
   }
 
   constructor(private treeModel: TreeModel) {
+    makeObservable(this);
     treeModel.virtualScroll = this;
     this._dispose = [autorun(() => this.fixScroll())];
   }

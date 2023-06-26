@@ -1,5 +1,5 @@
 import { Injectable, OnDestroy } from '@angular/core';
-import { observable, computed, action, autorun } from 'mobx';
+import { observable, computed, action, autorun, makeObservable } from 'mobx';
 import { Subscription } from 'rxjs';
 import { TreeNode } from './tree-node.model';
 import { TreeOptions } from './tree-options.model';
@@ -27,6 +27,10 @@ export class TreeModel implements ITreeModel, OnDestroy {
   private firstUpdate = true;
   private events: any;
   private subscriptions: Subscription[] = [];
+
+  constructor() {
+    makeObservable(this);
+  }
 
   // events
   fireEvent(event) {
@@ -526,5 +530,4 @@ export class TreeModel implements ITreeModel, OnDestroy {
   private _setActiveNodeMulti(node, value) {
     this.activeNodeIds = Object.assign({}, this.activeNodeIds, {[node.id]: value});
   }
-
 }

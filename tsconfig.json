@@ -4,7 +4,7 @@
     "module": "es2020",
     "moduleResolution": "node",
     "target": "ES2022",
-    "useDefineForClassFields": false,
+    "useDefineForClassFields": true,
     "outDir": "/dist/out-tsc",
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
@@ -20,11 +20,9 @@
     ],
     "paths": {
       "angular-tree-component": [
-        "dist/angular-tree-component",
         "dist/angular-tree-component"
       ],
       "angular-tree-component/*": [
-        "dist/angular-tree-component/*",
         "dist/angular-tree-component/*"
       ]
     }

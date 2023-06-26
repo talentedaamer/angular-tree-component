@@ -6,7 +6,8 @@
     "declaration": false,
     "noImplicitAny": false,
     "outDir": "dist",
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    "useDefineForClassFields": true
   },
   "include": [
       "**/*.ts"
