@@ -7,7 +7,7 @@ import { TreeViewportComponent } from './tree-viewport.component';
 
 import { TreeNode } from '../models/tree-node.model';
 
-import { reaction } from 'mobx';
+import { makeObservable, reaction } from 'mobx';
 import { observable, computed, action } from '../mobx-angular/mobx-proxy';
 import { TreeVirtualScroll } from '../models/tree-virtual-scroll.model';
 
@@ -210,13 +210,23 @@ export class TreeNodeCollectionComponent implements OnInit, OnDestroy {
 
   @Input() treeModel: TreeModel;
 
-  @observable _nodes;
+  constructor() {
+    makeObservable(this, {
+      _nodes: observable,
+      viewportNodes: observable,
+      marginTop: computed,
+      setNodes: action     
+    })
+  }
+
+
+  _nodes;
   private virtualScroll: TreeVirtualScroll; // Cannot inject this, because we might be inside treeNodeTemplateFull
   @Input() templates;
 
-  @observable viewportNodes: TreeNode[];
+  viewportNodes: TreeNode[];
 
-  @computed get marginTop(): string {
+  get marginTop(): string {
     const firstNode =
       this.viewportNodes && this.viewportNodes.length && this.viewportNodes[0];
     const relativePosition =
@@ -231,7 +241,7 @@ export class TreeNodeCollectionComponent implements OnInit, OnDestroy {
 
   _dispose = [];
 
-  @action setNodes(nodes) {
+  setNodes(nodes) {
     this._nodes = nodes;
   }
 
