@@ -4,7 +4,7 @@
 
 # angular tree component
 
-## Getting started - WARNING: This is an unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests started failing but proceeding anyways as the example-app works as expected and some of the unit test dependencies didn't appear to handle ivy changes.
+## Getting started - A simple yet powerful tree component for Angular16.  WARNING: This is an unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests pass and the example-app works as expected.
 
 Install `angular-tree-component`:
 
