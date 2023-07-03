@@ -1,6 +1,6 @@
 {
   "name": "@odymaui/angular-tree-component",
-  "version": "16.0.3",
+  "version": "16.0.4",
   "description": "A simple yet powerful tree component for Angular16.  WARNING: This is an unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests pass and the example-app works as expected.",
   "author": "Circlon Group <os-group@circlon.de>",
   "homepage": "https://github.com/odymaui/angular-tree-component",
