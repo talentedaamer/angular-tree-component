@@ -1,7 +1,7 @@
 {
   "name": "@odymaui/angular-tree-component",
-  "version": "16.0.0",
-  "description": "A simple yet powerful tree component for Angular2.  WARNING: This is a broken, unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests started failing but proceeding anyways as the example-app works as expected and some of the unit test dependencies didn't appear to handle ivy changes. Working on identifying the issue(s) now.",
+  "version": "16.0.3",
+  "description": "A simple yet powerful tree component for Angular16.  WARNING: This is an unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests pass and the example-app works as expected.",
   "author": "Circlon Group <os-group@circlon.de>",
   "homepage": "https://github.com/odymaui/angular-tree-component",
   "license": "MIT",
