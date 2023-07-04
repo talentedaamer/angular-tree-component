@@ -17,8 +17,10 @@
 /***************************************************************************************************
  * BROWSER POLYFILLS
  */
-
+//dump IE support after serve errors 
+//./projects/example-app/src/polyfills.ts:38:0-29 - Error: Module not found: Error: Can't resolve 'core-js/es7/reflect' in 'D:\TmpCode\Angular\angular-tree-component\projects\example-app\src'
 /** IE9, IE10 and IE11 requires all of the following polyfills. **/
+/*
 import 'core-js/es6/symbol';
 import 'core-js/es6/object';
 import 'core-js/es6/function';
@@ -33,6 +35,7 @@ import 'core-js/es6/regexp';
 import 'core-js/es6/map';
 import 'core-js/es6/weak-map';
 import 'core-js/es6/set';
+*/
 
 /** IE10 and IE11 requires the following for the Reflect API. */
 // import 'core-js/es6/reflect';
@@ -40,7 +43,7 @@ import 'core-js/es6/set';
 
 /** Evergreen browsers require these. **/
 // Used for reflect-metadata in JIT. If you use AOT (and only Angular decorators), you can remove.
-import 'core-js/es7/reflect';
+//import 'core-js/es7/reflect';
 
 /**
  * By default, zone.js will patch all possible macroTask and DomEvents
