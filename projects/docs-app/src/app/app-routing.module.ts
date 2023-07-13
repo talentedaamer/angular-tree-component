@@ -81,7 +81,7 @@ const routes: Routes = [
       routes,
       {
     scrollPositionRestoration: 'enabled',
-    relativeLinkResolution: 'legacy'
+   // relativeLinkResolution: 'legacy'
 }
     ),
   ],
