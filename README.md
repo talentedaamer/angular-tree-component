@@ -1,17 +1,17 @@
-[![npm version](https://badge.fury.io/js/ngx-tree-component.svg)](https://badge.fury.io/js/ngx-tree-component)
+[![npm version](https://badge.fury.io/js/angular-tree-component.svg)](https://badge.fury.io/js/angular-tree-component)
 
-# ngx tree component
+# angular tree component
 
 ## Getting started - A simple yet powerful tree component for Angular 16.
 
 Install `angular-tree-component`:
 
-```npm install ngx-tree-component```
+```npm install angular-tree-component```
 
 Import `TreeModule`:
 
 ```
-import { TreeModule } from 'ngx-tree-component';
+import { TreeModule } from 'angular-tree-component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,7 +24,7 @@ export class AppModule {}
 Add css to `styles.scss` or include in `angular.json`:
 
 ```
-@import '~ngx-tree-component/css/angular-tree-component.css';
+@import '~angular-tree-component/css/angular-tree-component.css';
 ```
 
 ## Docs, Demos & More

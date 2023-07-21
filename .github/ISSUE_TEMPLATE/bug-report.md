@@ -15,7 +15,7 @@ about: Report a bug or regression in functionality
 
 <!-- Describe what the expected behavior would be. -->
 
-## Versions of Ngx Tree Component, Angular, Node, affected browser(s) and operating system(s):
+## Versions of Angular Tree Component, Angular, Node, affected browser(s) and operating system(s):
 
 ## Other information:
 
