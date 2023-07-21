@@ -1,14 +1,15 @@
 {
-  "name": "@odymaui/angular-tree-component",
-  "author": "Circlon Group <os-group@circlon.de>",
-  "homepage": "https://github.com/odymaui/angular-tree-component",
-  "description": "A simple yet powerful tree component for Angular16.  WARNING: This is an unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests pass and the example-app works as expected.",
-  "version": "16.0.4",
-  "repository": "https://github.com/odymaui/angular-tree-component.git",
+  "name": "ngx-tree-component",
+  "author": "Aamer Shahzad",
+  "homepage": "https://github.com/talentedaamer/angular-tree-component",
+  "description": "A simple yet powerful tree component for Angular 16.",
+  "version": "16.0.6",
+  "license": "MIT",
+  "repository": "https://github.com/talentedaamer/angular-tree-component.git",
   "bugs": {
-    "url": "https://github.com/odymaui/angular-tree-component/issues"
+    "url": "https://github.com/talentedaamer/angular-tree-component/issues"
   },
-  "readme": "https://github.com/odymaui/angular-tree-component/blob/master/README.md",
+  "readme": "https://github.com/talentedaamer/angular-tree-component/blob/master/README.md",
   "keywords": [
     "ng",
     "angular",
@@ -30,6 +31,7 @@
     "angular2-treeview",
     "angular-tree-component",
     "angular tree component",
+    "ngx tree component",
     "angular2-tree-component",
     "angular2 tree component"
   ],
@@ -40,6 +42,9 @@
   "dependencies": {
     "mobx": "~6.9.0",
     "tslib": "^2.5.3"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.1",

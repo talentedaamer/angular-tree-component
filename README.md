@@ -1,19 +1,17 @@
-[![npm version](https://badge.fury.io/js/%40circlon%2Fangular-tree-component.svg)](https://badge.fury.io/js/%40circlon%2Fangular-tree-component)
-[![Build Status](https://dev.azure.com/pdsgmbh/AngularTree/_apis/build/status/AngularTreeComponent-CI?branchName=master)](https://dev.azure.com/pdsgmbh/AngularTree/_build/latest?definitionId=59&branchName=master)
-<a href="https://angular-tree-component.herokuapp.com/"><img src="https://angular-tree-component.herokuapp.com/badge.svg" alt="slack" ></a>
+[![npm version](https://badge.fury.io/js/ngx-tree-component.svg)](https://badge.fury.io/js/ngx-tree-component)
 
-# angular tree component
+# ngx tree component
 
-## Getting started - A simple yet powerful tree component for Angular16.  WARNING: This is an unsupported fork for use in a dependent project to upgrade it to Angular 16.  Unit tests pass and the example-app works as expected.
+## Getting started - A simple yet powerful tree component for Angular 16.
 
 Install `angular-tree-component`:
 
-```npm install @odymaui/angular-tree-component```
+```npm install ngx-tree-component```
 
 Import `TreeModule`:
 
 ```
-import { TreeModule } from '@odymaui/angular-tree-component';
+import { TreeModule } from 'ngx-tree-component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +24,7 @@ export class AppModule {}
 Add css to `styles.scss` or include in `angular.json`:
 
 ```
-@import '~@odymaui/angular-tree-component/css/angular-tree-component.css';
+@import '~ngx-tree-component/css/angular-tree-component.css';
 ```
 
 ## Docs, Demos & More

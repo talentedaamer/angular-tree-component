@@ -11,7 +11,7 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  baseTitle = 'Angular Tree Component';
+  baseTitle = 'Ngx Tree Component';
 
   nav: NavigationNode[] = [
     { title: 'Getting Started', children: null, link: [''] },
